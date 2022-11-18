@@ -29,7 +29,7 @@ namespace ConsoleApp1
                 do
                 {     //show menu
                     displaymenu();
-                    Console.Write("Enter your choice(1-6):");
+                    Console.Write("Enter your choice(1~6):");
                     choice = int.Parse(Console.ReadLine());
                     Console.Clear();
                     switch (choice)
