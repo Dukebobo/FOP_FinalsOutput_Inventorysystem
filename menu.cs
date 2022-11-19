@@ -21,7 +21,7 @@ namespace ConsoleApp1
             const int MAX = 20000;//create an array to store 20000 stocks
             try
             {
-                stock[] st = new stock[MAX];
+                function.stock[] st = new function.stock[MAX];
                 int itemcount = 0;
                 int choice;
                 string confirm;
