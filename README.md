@@ -1,5 +1,8 @@
 # FOP_FinalsOutput_Inventorysystem
 C sharp ConsoleApplication 
+![Demo](img/Snipaste_2022-11-18_18-04-47.png)
+A basic Inventory system by Console application
+Add, delete, search function.
 
 ### Program
 program interface
@@ -19,7 +22,7 @@ after login  display function menu
 
 
 #### Demo
-![Demo](img/Snipaste_2022-11-18_18-04-47.png)
+
 
 ![Demo1](img/Kapture%202022-11-19%20at%2016.08.22.gif)
 
