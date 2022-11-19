@@ -17,6 +17,17 @@ namespace ConsoleApp1
     {
         public static void loginGate()
         {
+            //display login logo 
+            {
+                string logo = @"
+ __      _____ _    ___ ___  __  __ ___ 
+ \ \    / / __| |  / __/ _ \|  \/  | __|
+  \ \/\/ /| _|| |_| (_| (_) | |\/| | _| 
+   \_/\_/ |___|____\___\___/|_|  |_|___|
+                                        
+";
+                Console.WriteLine(logo);
+            }
 
             string user, password;
             Console.WriteLine("Please enter username：");
