@@ -135,16 +135,17 @@ namespace ConsoleApp1
             else Console.WriteLine("The record deosn't exits.Check the ID and try again.");
 
         }
+// update escape characters code  Make the display more tidy.
 
-        public static void viewall(stock[] st, int itemcount)
+  public static void viewall(stock[] st, int itemcount)
         {
 
             int i = 0;
             Console.WriteLine("====================================================================================================================\n                                                STOCK DATA/INFORMATION          \n====================================================================================================================");
             Console.WriteLine();
-            Console.WriteLine("{0,-5}\t{1,-20}{2,-10}{3,-10}{4,-10}{5,-9}(column index)", "0", "1", "2", "3", "4", "5");
+            Console.WriteLine("{0,-5}\t\t{1,-20}\t{2,-10}\t{3,-10}\t{4,-10}\t{5,-9}(column index)", "0","1", "2", "3", "4", "5");
             Console.WriteLine("____________________________________________________________________________________________________________________");
-            Console.WriteLine("{0,-5}\t{1,-15}\t{2,-5}\t{3,-10}{4,-10}{5,-5}", "SKU ID", "ITEM NAME", "CATEGORY", "QUANTITY", "PRICE", "VALUE");
+            Console.WriteLine("{0,-5}\t\t{1,-20}\t{2,-10}\t{3,-10}\t{4,-10}\t{5,-9}", "SKU ID", "ITEM NAME", "CATEGORY", "QUANTITY", "PRICE", "VALUE");
             Console.WriteLine("====================================================================================================================");
 
             while (i < itemcount)
@@ -152,8 +153,8 @@ namespace ConsoleApp1
 
                 if (st[i].sku != null)
                 {
-                    Console.Write("{0,-5}\t{1,-20}{2,-10}", st[i].sku, st[i].itemname, st[i].category);
-                    Console.Write("{0,-9}{1,-9}{2,-9}", st[i].qty, st[i].price, st[i].value);
+                    Console.Write("{0,-5}\t{1,-20}\t{2,-10}", st[i].sku, st[i].itemname, st[i].category);
+                    Console.Write("\t{0,-9}\t{1,-9}\t{2,-9}", st[i].qty, st[i].price, st[i].value.ToString("N"));        // Thousands display.
                     Console.WriteLine("\n--------------------------------------------------------------------------------------------------------------------\n");
                 }
 
@@ -172,7 +173,7 @@ namespace ConsoleApp1
             if (index != -1)
             {
                 Console.Write("{0,-5}\t{1,-20}{2,-5}", st[index].sku, st[index].itemname, st[index].category);
-                Console.Write("{0,-5}{1,-5}{2,-5}", st[index].qty, st[index].price, st[index].value);
+                Console.Write("{0,-5}{1,-5}{2,-5}", st[index].qty, st[index].price, st[index].value.ToString("N"));//update Thousands display.
                 Console.WriteLine();
 
             }
