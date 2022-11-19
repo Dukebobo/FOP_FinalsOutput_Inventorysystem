@@ -173,7 +173,7 @@ namespace ConsoleApp1
             if (index != -1)
             {
                 Console.Write("{0,-5}\t{1,-20}{2,-5}", st[index].sku, st[index].itemname, st[index].category);
-                Console.Write("{0,-5}{1,-5}{2,-5}", st[index].qty, st[index].price, st[index].value.ToString("N"));//update Thousands display.
+                Console.Write("{0,-5}{1,-5}\t{2,-5}", st[index].qty, st[index].price, st[index].value.ToString("N"));//update Thousands display.
                 Console.WriteLine();
 
             }
