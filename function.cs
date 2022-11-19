@@ -13,7 +13,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public struct stock
+    
+    internal class function
+    {
+        
+        public struct stock
     {
         public string sku;
         public string itemname;
@@ -22,8 +26,6 @@ namespace ConsoleApp1
         public float price;
         public float value;
     };
-    internal class function
-    {
 
         public static void add(stock[] st, ref int itemcount)
         {
