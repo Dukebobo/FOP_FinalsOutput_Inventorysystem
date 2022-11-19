@@ -17,7 +17,7 @@ namespace ConsoleApp1
     {
         public static void loginGate()
         {
-            //display login logo 
+            
 
                 string logo = @"
  __      _____ _    ___ ___  __  __ ___ 
@@ -25,13 +25,13 @@ namespace ConsoleApp1
   \ \/\/ /| _|| |_| (_| (_) | |\/| | _| 
    \_/\_/ |___|____\___\___/|_|  |_|___|
                                         
-";
-                Console.WriteLine(logo);
+                               ";
+                Console.WriteLine(logo); //print login-logo 
 
-
-            string user, password;
-            Console.WriteLine("Please enter username：");
-            while (true)
+            
+            string user, password; //declaration of the variable user and password
+            Console.WriteLine("Please enter username："); 
+            while (true) //while loop
             {
                 user = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(user))
@@ -49,7 +49,7 @@ namespace ConsoleApp1
                             Console.WriteLine("Password can not be empty! please check and enter again：");
                             password = Console.ReadLine();
                         }
-                        if (password == "demo")
+                        if (password.Equals("demo"))
                         {
                             Console.WriteLine("\n Login successful");
                             menu.choiceMenu();
@@ -68,12 +68,12 @@ namespace ConsoleApp1
                                     Console.WriteLine("Password is incorrect, please cehck and enter again：");
                                 }
                                 password = Console.ReadLine();
-                                if (password == "demo")
+                                if (password.Equals("demo"))
                                 {
                                     break;
                                 }
                             }
-                            if (password == "demo")
+                            if (password.Equals("demo"))
                             {
                                 Console.WriteLine("\n Login successful");
                                 menu.choiceMenu();
