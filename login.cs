@@ -34,7 +34,7 @@ namespace ConsoleApp1
             while (true) //while loop
             {
                 user = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(user))
+                if (string.IsNullOrEmpty(user))
                 {
                     Console.WriteLine("Username can not be empty! please check and enter again：");
                 }
