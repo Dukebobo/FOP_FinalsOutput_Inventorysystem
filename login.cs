@@ -1,10 +1,14 @@
-﻿/*
-Code File describe: loginLoop  while loop
+/*
+Complete code: https://github.com/Dukebobo/FOP_FinalsOutput_Inventorysystem
+
+Code File describe: Menu do-while loop and switch  and try catch;
 Project: FOP finals output
 Group: Group 3
 Submit Date: 5:22 PM, Nov 18, 2022 
+
 Renfrence: https://www.youtube.com/watch?v=az8mHaJXpRE
 */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
+    
 {
     public class login
     {
@@ -25,15 +30,17 @@ namespace ConsoleApp1
   \ \/\/ /| _|| |_| (_| (_) | |\/| | _| 
    \_/\_/ |___|____\___\___/|_|  |_|___|
                                         
-                               ";
-                Console.WriteLine(logo); //print login-logo 
+                               "; // Text to ASCII font small 
+                Console.WriteLine(logo); //display  login-logo 
 
             
             string user, password; //declaration of the variable user and password
             Console.WriteLine("Please enter username："); 
-            while (true) //while loop
+           
+            while (true) //while loop for "user" decision  
             {
                 user = Console.ReadLine();
+                
                 if (string.IsNullOrEmpty(user))
                 {
                     Console.WriteLine("Username can not be empty! please check and enter again：");
@@ -43,21 +50,25 @@ namespace ConsoleApp1
                     if (user.Equals("demo"))
                     {
                         Console.WriteLine("Please enter password：");
+                        
                         password = Console.ReadLine();
+                        
                         if (string.IsNullOrEmpty(password))
                         {
                             Console.WriteLine("Password can not be empty! please check and enter again：");
+                            
                             password = Console.ReadLine();
                         }
                         if (password.Equals("demo"))
                         {
                             Console.WriteLine("\n Login successful");
+                            
                             menu.choiceMenu();
                             break;
                         }
                         else
                         {
-                            while (true)
+                            while (true)//while loop for "password" decision  
                             {
                                 if (string.IsNullOrEmpty(password))
                                 {
@@ -68,6 +79,7 @@ namespace ConsoleApp1
                                     Console.WriteLine("Password is incorrect, please cehck and enter again：");
                                 }
                                 password = Console.ReadLine();
+                                
                                 if (password.Equals("demo"))
                                 {
                                     break;
@@ -76,6 +88,7 @@ namespace ConsoleApp1
                             if (password.Equals("demo"))
                             {
                                 Console.WriteLine("\n Login successful");
+                                
                                 menu.choiceMenu();
                                 break;
                             }
@@ -87,7 +100,7 @@ namespace ConsoleApp1
                     }
                 }
             }
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
