@@ -1,8 +1,11 @@
-﻿/*
-Code File describe: if  if else , arrays,
+/*
+Complete code: https://github.com/Dukebobo/FOP_FinalsOutput_Inventorysystem
+
+Code File describe: array,constructor,if..else, for loop, escape character，
 Project: FOP finals output
 Group: Group 3
 Submit Date: 5:22 PM, Nov 18, 2022 
+
 Renfrence: https://www.youtube.com/watch?v=az8mHaJXpRE
 */
 using System;
@@ -14,19 +17,20 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     
-    internal class function
+    public class function
     {
-        
+        //declare stock structure
         public struct stock
-    {
+        {
         public string sku;
         public string itemname;
         public string category;
         public float qty;
         public float price;
         public float value;
-    };
-
+        };
+        
+        //add items
         public static void add(stock[] st, ref int itemcount)
         {
 
@@ -56,7 +60,7 @@ namespace ConsoleApp1
             ++itemcount;
 
         }
-
+        //item delete
         public static void delete(stock[] st, ref int itemcount)
         {
             string id;
@@ -92,7 +96,7 @@ namespace ConsoleApp1
             }
             else Console.WriteLine("No record to delete");
         }
-
+        //items edit
         public static void update(stock[] st, int itemcount)
         {
             string id;
@@ -137,9 +141,11 @@ namespace ConsoleApp1
             else Console.WriteLine("The record deosn't exits.Check the ID and try again.");
 
         }
-// update escape characters code  Make the display more tidy.
 
-  public static void viewall(stock[] st, int itemcount)
+
+        //update escape characters code  Make the display more tidy.
+        //display all items
+        public static void viewall(stock[] st, int itemcount)
         {
 
             int i = 0;
@@ -163,7 +169,7 @@ namespace ConsoleApp1
                 i = i + 1;
             }
         }
-
+         //find  
         public static void find(stock[] st, int itemcount)
         {
             Console.WriteLine("======================================================\n                     SEARCH STOCKS                         \n======================================================");
@@ -181,7 +187,8 @@ namespace ConsoleApp1
             }
             else Console.WriteLine("The record doesn't exits.");
         }
-
+        
+        //search 
         public static int search(stock[] st, string id, int itemcount)
         {
             int found = -1;
@@ -196,7 +203,8 @@ namespace ConsoleApp1
             return found;
 
         }
-
+        
+        //clean
         public static void clean(stock[] st, int index)
         {
             st[index].sku = null;
