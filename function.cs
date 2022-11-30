@@ -101,7 +101,7 @@ namespace ConsoleApp1
         {
             string id;
             int column_index;
-            Console.WriteLine("======================================================\n           UPDATE STUDENTS DATA/INFORMATION                         \n======================================================");
+            Console.WriteLine("======================================================\n           UPDATE DATA/INFORMATION                         \n======================================================");
             Console.Write("Enter Item SKU ID:");
             id = Console.ReadLine();
             Console.WriteLine("Which field you want to update(1-4)?:");
