@@ -34,7 +34,7 @@ namespace ConsoleApp1
                 do
                 {     // using do while loop  and switch  to make a menu choice function . 
                     displaymenu();  //display menu choice 
-                    Console.Write("Enter your choice(1~6):");
+                    Console.WriteLine("Enter your choice(1~6):");
                     choice = int.Parse(Console.ReadLine());
                     Console.Clear();
                     
@@ -95,8 +95,6 @@ namespace ConsoleApp1
             Console.WriteLine(" 5.Find a stock by SKU");
             Console.WriteLine(" 6.Exit ");
             Console.WriteLine("******************************************************\n"); 
-            
-            Console.ReadLine();
         }
     }
 }
