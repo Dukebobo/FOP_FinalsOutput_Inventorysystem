@@ -1,7 +1,7 @@
 /*
 Complete code: https://github.com/Dukebobo/FOP_FinalsOutput_Inventorysystem
 
-Code File describe: Menu do-while loop and switch  and try catch;
+Code File describe: while loop and if....else
 Project: FOP finals output
 Group: Group 3
 Submit Date: 5:22 PM, Nov 18, 2022 
