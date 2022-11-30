@@ -86,7 +86,7 @@ namespace ConsoleApp1
 ";
             Console.WriteLine(logo);  //display logo 
             
-             
+            Console.WriteLine("\n Please choose the function you need from the following numbers.\n");
             Console.WriteLine("======================================================\n                         MENU                         \n======================================================");
             Console.WriteLine(" 1.Add stock records");
             Console.WriteLine(" 2.Delete stock records");
