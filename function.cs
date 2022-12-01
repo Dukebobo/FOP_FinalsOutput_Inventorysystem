@@ -136,7 +136,7 @@ namespace ConsoleApp1
                     st[index].price = float.Parse(Console.ReadLine());
                 }
                 else Console.WriteLine("Invalid column index");
-                st[index].value = st[index].qty + st[index].price;
+                st[index].value = st[index].qty * st[index].price;
             }
             else Console.WriteLine("The record deosn't exits.Check the ID and try again.");
 
